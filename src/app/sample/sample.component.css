@@ -1,0 +1,8 @@
+.header{
+    background-color: aqua;
+    letter-spacing: 2px;
+}
+.footer{
+    color: red;
+    text-transform: uppercase;
+}

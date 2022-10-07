@@ -1,0 +1,30 @@
+<!-- 
+{{employee.name}} <br>
+{{employee.city}} <br>
+{{employee.salary}} <br>
+<img [src]="logo" height="500px" width="500px"> <br>
+<img src="{{logo}}" height="500px" width="500px">
+<br>
+<img bind-src="mylogo" height="500px" width="500px"> <br>
+
+<button [disabled]="!flag">Register</button>  <br>
+<button (click)='change()'>change message</button>{{message}} {{logo}} <br>
+<button (click)="greetuser('Pramod')">change message</button> {{newmessage}}
+
+
+<h2 [class]="myclass">Using class Binding</h2>
+<h2 [class]="flag?myclass:newclass">Using class Binding</h2>
+<h2 [class.footer]="flag">Using css class with Bollean value</h2>
+<h2 [class]="flag?'footer':'header'">Using css classnames</h2>
+
+<h2 [style] = "myclass">Using CSS Styling</h2>
+<h2 [style.color] = "flag?'black':'green'">Using CSS Styling</h2>
+
+<input type="text" [(ngModel)]="username">{{username}} -->
+
+<input type="text" [(ngModel)]="username">{{username}} <br>
+<button (click)="greetuser('Pramod')">Change message</button>{{message}}
+
+<h2>Templet Ref variable</h2>
+<input type="text" #uname>
+<button (click)="showUser(uname.value)">Show</button>{{newmessages}}

@@ -1,0 +1,23 @@
+<div [ngStyle]="{'background-color':'limegreen'}">
+    <h2>{{parentmess1}}</h2>
+    <h2>{{parentmess2}}</h2>
+    <h2>{{childone}}</h2>
+    <h2>{{childtwo}}</h2>
+
+    Enter Name <input type="text" #pname (keyup)="0">
+
+    <app-coursechild
+      [childData1]="parentmess1"
+      [childData2]="pname.value"
+      [cdata]="parentmess2"
+      (cevent1)="childone=$event"
+      (cevent2)="childtwo=$event"
+      ></app-coursechild>
+      <!-- <app-coursechild
+      [childData1]="parentmess1"
+      [childData2]="pname.value"
+      [cdata]="parentmess2"
+      (cevent1)="childone=$event"
+      (cevent2)="childtwo=$event"
+      ></app-coursechild> -->
+</div>

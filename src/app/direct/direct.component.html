@@ -1,0 +1,74 @@
+<!-- {{username}}
+<h2 *ngIf="username=='Pramod' else temp1" >Welcome {{username}}</h2>
+
+<ng-template #temp1><h2>Wrong username</h2></ng-template>
+
+<input type="text" [(ngModel)]="itemName">
+    <h3 *ngIf="itemName =='breakfast' then temp2 else temp3">Enter item name</h3>
+<ng-template #temp2 ><h3 [class]="successclass">{{items}}</h3></ng-template>
+
+<ng-template #temp3 > 
+    <h3 *ngIf="!itemName" [class]="errorclass"
+    [style.background-color]="'aqua'">Items for this choice not available</h3> 
+</ng-template>
+
+<ol> 
+   <li *ngFor="let item of items" [style=""> {{item}}</li>
+ </ol> -->
+<!-- 
+ <ol>
+    <li *ngFor="let course of courses" [style.list-style-type]="'none'">
+        <h3 *ngIf="course.type=='Backend'" [style.color]="'red'">
+            {{course.coursename|uppercase}}<br>
+            {{course.type|lowercase}} <br>
+            {{course.medium|titlecase}}<br>
+            {{course.cost|currency:'Rs '}}<br>
+            {{course.trainer}}<br>
+        </h3>
+        <h3 *ngIf="course.type=='Frontend'" [style.color]="'blue'">
+            {{course.coursename|uppercase}}<br>
+            {{course.type|lowercase}}<br>
+            {{course.medium|titlecase}}<br>
+            {{course.cost|currency:'Rs '}}<br>
+            {{course.trainer}}<br>
+        </h3>
+        <h3 *ngIf="course.type=='Testing'" [style.color]="'green'">
+            {{course.coursename|uppercase}}<br>
+            {{course.type|lowercase}}<br>
+            {{course.medium|titlecase}}<br>
+            {{course.cost|currency:'Rs '}}<br>
+            {{course.trainer}}<br>
+        </h3>
+        
+    </li>
+ </ol> -->
+
+ <!-- <ol>
+    <li *ngFor="let course of courses" [style.list-style-type]="'none'">
+        <h3 *ngIf="course.type=='Backend'" [style.color]="'red'">
+            {{course.coursename|uppercase}} </h3>
+            <h3>  {{course.type|lowercase}} </h3>
+            <h3>{{course.medium|titlecase}}</h3>
+            <h3> {{course.cost|currency:'Rs '}}</h3>
+            <h3 *ngIf="course.trainer"> {{course.trainer}}</h3>
+    </li>
+        </ol> -->
+
+       <!-- Pipes -->
+        birthday date= {{birthday|date}} <br>
+        birthday date short=   {{birthday|date:'short'}} <br>
+        birthday date with short=  {{birthday|date:'shortDate'}} <br>
+        birthday date medium with time=  {{birthday|date:'medium'}} <br>
+        birthday medium date=  {{birthday|date:'mediumDate'}} <br>
+        birthday full date {{birthday|date:'fullDate'}} <br>
+       number=  {{985.655|number}} <br>
+       number=  {{985.655|number:"1.0-2"}} <br>
+        currency= {{985.655|percent}} <br>
+        percent= {{985.655|percent:"1.0-2"}} <br>
+       currency= {{985.655|currency}} <br>
+       {{"pramod"|uppercase}} <br>
+
+       {{employee|json}} <br>
+       {{"pramod"|title:'male'}} <br>
+       {{"sita"|title:'female'}} <br>
+       {{"pramod"|title}} <br>

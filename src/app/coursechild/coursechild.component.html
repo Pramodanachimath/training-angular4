@@ -1,0 +1,12 @@
+<div [ngStyle]="{'background-color':'orange'}">
+<h2>Inside Child</h2>
+<h2>{{childData1}}</h2>
+<h2>{{childData2}}</h2>
+<h2>{{childData3}}</h2>
+
+<!-- <button (click)='change()'>change message</button>{{message}} {{logo}} <br> -->
+<button (click)='showMessage()'>Show</button>{{cmessage}} <br>
+ChildName<input type="text" #childName>
+<button (click)="printName(childName.value)">Print</button> {{cresult}}<br>
+
+</div>

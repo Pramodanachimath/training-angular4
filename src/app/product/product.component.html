@@ -1,0 +1,11 @@
+<div [ngStyle]="{'background-color':'blue'}">
+<ol>
+    <li *ngFor="let product of  products">
+        <h2>{{product.productId}}</h2>
+        <h2>{{product.name}}</h2>
+        <h2>{{product.price}}</h2>
+        <h2>{{product.category}}</h2>
+        <h2>{{product.brand}}</h2>
+    </li>
+</ol>
+</div>

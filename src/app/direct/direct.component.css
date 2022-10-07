@@ -1,0 +1,14 @@
+.myclass{
+    color: green;
+}
+
+.myerror{
+    color: red;
+}
+.mylist{
+    list-style-type: none;
+    color: black;
+}
+.mytype{
+    color: aqua;
+}
